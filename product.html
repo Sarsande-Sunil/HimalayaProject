@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product_page</title>
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <!-- this is navbar -->
+    <div id="box"></div>
+    <hr>
+    <div class="container">
+        <div class="leftpro">
+         <select name="" id="select">
+         <option value="">Health Category</option>
+         <option value="">Herbal Supplements</option>
+         <option value="">Health Interests</option>
+         <option value="">Oral Care</option>
+         <option value="">Personal Care</option>
+         </select>
+        </div> 
+        <div id="product">
+            <h1 class="product-h1">Products</h1>
+
+            <select id="Sort_by_price">
+                <option value="">Sort By Price</option>
+                <option value="low">Sort by Low to High Price</option>
+                <option value="high">Sort by High to Low Price</option>
+            </select>
+            
+            <div id="productdiv"></div>
+        </div>
+
+    </div>
+    <hr>
+
+    <!-- thisis footer -->
+    <div id="foot"></div>
+</body>
+
+</html>
+
+<script type="module">
+
+
+    import { navbar, footerreturn } from "./components/navbar.js"
+    console.log(navbar, footerreturn);
+
+    let nav = document.getElementById("box");
+    nav.innerHTML = navbar();
+
+    var data = [
+        //1
+        {
+            name: "Back to Balance",
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-3_1024x.png?v=1591028195",
+            price: 29.25,
+        },
+        //2
+        {
+            name: "Bamboo & Sea Salt",
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaBambooToothpaste-Tube_Front_1024x.png?v=1613065864",
+            price: 5.99,
+        },
+        //3
+        {
+            name: "(Neem & Turmeric)",
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/BEAUTY_bodybar_purifying-2_1024x.png?v=1595909766",
+            price: 4.99,
+        },
+        //4
+        {
+            name: "(Lavender & Rosemary)",
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/BEAUTY_bodybar_refreshing-1_1024x.png?v=1595909931",
+            price: 4.99,
+        },
+        //5
+        {
+            name: "JointCare®",
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/JointCare-120---Box-Bottle_1024x.png?v=1595814579",
+            price: 5.99,
+        },
+        //6
+        {
+            name: "Boswellia",
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Boswellia-60---Box-Bottle_1024x.png?v=1595862802",
+            price: 14.95,
+        },
+        //7
+        {
+            name: "Chyavanprash",
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-58_1024x.png?v=1591027935",
+            price: 13.95,
+        },
+        //8
+        {
+            name: "LeanCare®",
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-141_1024x.png?v=1590836855",
+            price: 25.95,
+        },
+        //9
+        {
+            name: "DermaCare®",
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-34_1024x.png?v=1591027900",
+            price: 22.95,
+        },
+        //10
+        {
+            name: "Curcumin Complete™",
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-30_1024x.png?v=1590836814",
+            price: 18.95,
+        },
+        //11
+        {
+            name: "ComfortCleanse®",
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-33_1024x.png?v=1591027962",
+            price: 20.95,
+        },
+        //12
+        {
+            name: "LiverCare®",
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/LiverCare-90---Box-Bottle_1024x.png?v=1595815804",
+            price: 27.95,
+        },
+        //13
+        {
+            name: "GlucoCare®",
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-126_1024x.png?v=1591028001",
+            price: 24.95,
+        },
+        //14
+        {
+            name: "HeartCare®",
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-36_fbc92680-5171-436b-acc1-6a5a6a2ac59c_1024x.png?v=1591028013",
+            price: 22.95,
+        },
+        //15
+        {
+            name: "Hello Peace®",
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HUSAHELLOPEACEBOX_BOTTLE_1024x.jpg?v=1608243907",
+            price: 23.99,
+        },
+        //16
+        {
+            name: "MindCare®",
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/MindCare-60---Box-Bottle_1024x.png?v=1595823793",
+            price: 23.99,
+        },
+        //17
+        {
+            name: "Holy Basil",
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HolyBasil-30-box-bottle_1024x.png?v=1591028027",
+            price: 12.95,
+        },
+        //18
+        {
+            name: "Hello Joy®",
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HUSAHELLOJOYBOX_BOTTLE_1024x.jpg?v=1608241956",
+            price: 23.29,
+        },
+        //19
+        {
+            name: "Organic Arjuna",
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-50_1024x.png?v=1591027921",
+            price: 24.95,
+        },
+        //20
+        {
+            name: "Organic Amla",
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-23_1024x.png?v=1590836890",
+            price: 24.95,
+        },
+
+    ];
+    //console.log(data);
+   // sorting function
+
+     localStorage.setItem("himalaya",JSON.stringify(data));
+     var cart = JSON.parse(localStorage.getItem("himalaya")) || [];
+
+     let selected = document.getElementById("Sort_by_price");
+     selected.addEventListener("click",function(){
+       sortby(cart);
+     });
+
+     function sortby(data){
+         let value1 = document.getElementById("Sort_by_price").value;
+         console.log("v",value1);
+        
+         if(value1 =="high"){
+          data = data.sort(function(a,b){
+            return b.price-a.price;
+          });
+         }
+         
+         else if(value1=="low"){
+             data = data.sort(function(a,b){
+                 return a.price-b.price;
+             });
+            }
+        }
+
+     showProducts(cart);
+     console.log("cart",cart);
+
+    function showProducts(cart) {
+        data.map(function (item) {
+
+            let product_div = document.getElementById("productdiv");
+            let div = document.createElement("div");
+            product_div.appendChild(div);
+
+            var img = document.createElement("img");
+            img.src = item.image_url 
+
+            var h1 = document.createElement("h3");
+            h1.innerText = item.name;
+
+            var h2 = document.createElement("h4");
+            h2.innerText = "$" + item.price;
+
+            var btn = document.createElement("button");
+            btn.textContent ="Go to Checkout" ;
+            btn.addEventListener("click", function () {
+                addToCart(item);
+            });
+
+           div.append(img,h1,h2,btn);
+
+        });
+    }
+
+        function addToCart(item){
+            localStorage.setItem("himalaya2",JSON.stringify(item));
+            window.location.href = "chekout.html";
+        }
+
+      
+    
+
+    let bottom = document.getElementById("foot");
+    bottom.innerHTML = footerreturn();
+</script>

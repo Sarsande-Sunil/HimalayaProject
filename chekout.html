@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout_page</title>
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+    <!-- this is navbar -->
+    <div id="box"></div>
+    <hr>
+
+    <div class="container">
+        <!-- box1 -->
+        <div id="showcart"></div>
+        <!-- box2 -->
+
+        <div class="main">
+            <div id="box2"></div>
+
+            <div class="main1">
+               <p>
+                Size: 30 Caplets
+               </p>
+               <p class="ptag">[Size 30 Caplets]  [Size 60 Caplets] [Size 90 Caplets] </p> 
+
+               
+                <button id="btn1" onclick="cart(data)">Add To Cart</button>
+
+                <button id="btn2" onclick="payment(data)">Buy It Now </button>
+                
+                <div id="descr">
+                    <h1 class="h1-desr">Description</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    
+    <!-- thisis footer -->
+    <div id="foot"></div>
+</body>
+
+</html>
+
+<script type="module">
+
+
+    import { navbar, footerreturn } from "./components/navbar.js"
+    console.log(navbar, footerreturn);
+
+    let nav = document.getElementById("box");
+    nav.innerHTML = navbar();
+
+    
+    var cartdata = JSON.parse(localStorage.getItem("himalaya2"));
+    console.log("cartdata", cartdata);
+    showcart(cartdata);
+     // add to cart 
+    let btn = document.getElementById("btn1");
+    btn.addEventListener("click",function(){
+        Cart(cartdata);
+    });
+
+    function  Cart(cartdata){
+        localStorage.setItem("himalaya3",JSON.stringify(cartdata));
+        alert
+        ("You are Surely Want to Add your Product into cart,After clicking on ok your Product added succsessfully into cart ")
+        window.location.href = "cart.html"
+    }
+    // go to payment 
+    let btn1 = document.getElementById("btn2");
+    btn1.addEventListener("click",function(){
+        payment(cartdata);
+
+    });
+    
+    function payment(cartdata){
+
+        localStorage.setItem("himalaya3",JSON.stringify(cartdata));
+
+        alert("Are you Sure about Your Product and Medical Specificatons");
+
+        window.location.href = "information.html"
+    }
+
+
+    // append function 
+
+    function showcart(data) {
+        console.log(data);
+        let main_div = document.getElementById("showcart");
+        let div = document.createElement("div");
+        main_div.appendChild(div);
+        
+
+        var img = document.createElement("img");
+        img.src = data.image_url
+
+        var h1 = document.createElement("h3");
+        h1.innerText = data.name;
+
+        var h2 = document.createElement("h4");
+        h2.innerText = "Total_Price =" + " " + "$" + data.price;
+
+        div.append(img);
+
+        let sub_div = document.getElementById("box2");
+        let div1 = document.createElement("div");
+        sub_div.appendChild(div1)
+        div1.append(h1,h2);
+        
+        let des = document.getElementById("descr");
+        let name1 = document.createElement("h4");
+        name1.innerText = data.name + 
+         "  " + " root powder and root extract in a time-saving 2-month supply" 
+        + " Certified USDA Organic, Non-GMO Project verified and Vegan, with no Wheat, Corn, Soy or Dairy" 
+        + "Provides stress relief by supporting your adrenal glands for normal levels of the stress hormone cortisol*"+
+        + "Promotes deeper levels of relaxation for occasional sleeplessness*" 
+        + " " + data.name;
+
+        des.append(name1)
+
+    }
+
+   
+// footer
+    let bottom = document.getElementById("foot");
+    bottom.innerHTML = footerreturn();
+
+</script>

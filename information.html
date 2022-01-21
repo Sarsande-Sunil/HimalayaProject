@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Information_page</title>
+    <link rel="stylesheet" href="information.css">
+</head>
+
+<body>
+
+    <!-- thsi is boot strap page -->
+    <div class="container">
+
+        <!-- box1 -->
+        <div class="box1">
+
+            <div id="image">
+                <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/new-logo.png?3169" alt="1">
+            </div>
+            <hr>
+
+            <div id="image2">
+
+                <a href="">
+
+                    <img src="data:image/png;base64,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"
+                        class="rounded float-start" alt="1">
+
+                </a>
+
+                <a href="">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBISEhgSERISGBIVEhIVGBgREhUREhISGBQZGhoVGBocIDwlHB4rHxgYJjsmKy8xNTU1HCQ7QDszPy40NTEBDAwMEA8QHhISHjQkJCs0MTExNDYxNDQ0NDE0NzQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0ND8xPzQ0NP/AABEIAL4BCgMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQYBBAcDAgj/xABJEAACAQIDBAYFCQUFBwUAAAABAgADEQQFEgYHITETIkFRYXEygZGhsRVCUlNicsHR4RQjkrKzJDV0osIWdYKDo9LwFzNUZHP/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAwQFAgEG/8QALxEBAAIBAwEFBwMFAAAAAAAAAAECAwQREiEFMVFhgRMUFUFxobEyQkMkkeHw8f/aAAwDAQACEQMRAD8A7NERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQETEQMxEQEREBERAREQEREBERAREQEREBERAREQEREBERARExAzExefD1FXizAeZtPJnYekxeRuIzqgnz9R7lF5G19pPoJ63P4CV8mswY++yemmy37qrJeedSqq8WIHmbSm184rv8/SO5Raa4o1qnHS7eNiZTv2pWemOsys10E/vtELXVzugptrv90EzcwuKSoupGBHw85RKlJkNmVgftAibWU4s0qim/VYhWHYQfykWLtK85NskREfh3fQ14b0nr+V5iYmZtMwiIgIiICIiAiIgIiICIiAiIgIiICIiAmJmYMBPl3A5kDzNpHZya2gdBe9+Onna0hlyfE1OLtb77E+6VM2ovS3ClJtP2WMeGtq8rXiPym62cUE+eCe5eMjq+0o+Yh82Npmjs0vz6hP3Rab1PKMOnNQfFzf4yGffb+FI+6T+lp42QFTN8RU4KSPBF4z4TLsTUNyrebm3xlmbG4anwD0xbsWx+E1am0VEeiGbyFvjIL6fH/Nm39U1c1/4sW3o0KOzjn03VfIajN+js9RHpFm8zYe6aVXaVvmUwPvNf4TSq55iG5OF+6o/GcRfQ4+6OX++brhq7987LRRwFFPRp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"
+                        class="rounded float-end" alt="2">
+
+                </a>
+
+                <a href="">
+                    <img src="https://images.hindustantimes.com/tech/img/2020/08/29/1600x900/google_pay_official_1598685711576_1598685719525.jpg"
+                        class="rounded float-end" alt="3">
+
+                </a>
+
+            </div>
+
+            <hr>
+
+            <!-- form -->
+            <div id="text">
+
+                <h4>Contact information</h4>
+                <h4>Already have an account?
+                    <a href="signup.html">Log in</a>
+                </h4>
+
+            </div>
+            <!-- form1 -->
+            <div id="form1">
+
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" 
+                        class="form-control" 
+                        id="exampleInputEmail1" 
+                        aria-describedby="emailHelp" placeholder="Enter Email ">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1"> Email me with news and offers</label>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <hr>
+            <!-- form2 -->
+            <div id="form2">
+                <h2>Shipping address</h2>
+            </div>
+
+            <!-- mainform -->
+            <div id="mainform">
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom02" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustomUsername" class="form-label">Username</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            <input type="text" class="form-control" id="validationCustomUsername"
+                                aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                                Please choose a username.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationCustom03" class="form-label">City</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid city.
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom04" class="form-label">State</label>
+                        <select class="form-select" id="validationCustom04" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>...</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid state.
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom05" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="validationCustom05" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid zip.
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                                Agree to terms and conditions
+                            </label>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="button" id="butn">
+                            Continue To Shipping
+                        </button>
+                        <a href="cart.html">Return to cart</a>
+                    </div>
+                </form>
+            </div>
+            <hr>
+            <!-- bottom -->
+
+            <div id="bottom">
+
+                <div class="d-flex flex-row bd-highlight mb-3">
+                    <div class="p-2 bd-highlight">
+                        <a
+                            href="https://himalayausa.com/39917289633/checkouts/3835b6b2e0a86622ad5fa164f37796b3?_ga=2.123037647.590651311.1642169581-2082408017.1642169580">
+                            Refund Policy
+                        </a>
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <a
+                            href="https://himalayausa.com/39917289633/checkouts/3835b6b2e0a86622ad5fa164f37796b3?_ga=2.123037647.590651311.1642169581-2082408017.1642169580">
+                            Shipping Policy
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- box2 -->
+        <hr>
+        <div class="box2">
+            <hr>
+            <!-- container -->
+
+            <div class="container4">
+
+                <div id="showdata"></div>
+
+                <div id="ctname">
+
+                </div>
+
+                <div id="ctprice"></div>
+
+            </div>
+            <hr>
+
+            <!-- form1 -->
+            <div id="form1">
+                <form class="row g-3">
+                    
+                    <div class="col-auto">
+                      <label for="inputPassword2" 
+                      class="visually-hidden">Password</label>
+                      <input type="password" 
+                      class="form-control" id="inputPassword2" 
+                      placeholder="DISCOUNT CODE">
+                    </div>
+                    <div class="col-auto">
+                      <button type="submit" 
+                      class="btn btn-primary mb-3" id="btn5">Apply</button>
+                    </div>
+                </form>
+            </div>
+            <hr>
+
+            <!-- flex -->
+            <div id="flex1">
+                <div id="subt">
+                    <h4>Subtotal</h4>
+                </div>
+                <div id="ctnpric2">
+
+                </div>
+            </div>
+
+            <div id="flex2">
+                <div id="subt1">
+                    <h4>Shipping</h4>
+                </div>
+                <div id="next">
+
+                    <h4>Calculated at next step</h4>
+
+                </div>
+            </div>
+            <hr>
+
+            <div id="flex3">
+                <div id="subt1">
+                    <h4>Total</h4>
+                </div>
+                <div id="next1"></div>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Propper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
+
+<script>
+    var count = 0;
+    let chekoutdata = JSON.parse(localStorage.getItem("himalaya3"));
+    showCart(chekoutdata);
+    count++;
+    console.log(chekoutdata);
+    console.log("x", count);
+
+    let btn = document.getElementById("butn");
+    btn.addEventListener("click",function(){
+        shipping(chekoutdata);
+    });
+
+    function shipping(chekoutdata){
+        localStorage.setItem("himalaya3",JSON.stringify(chekoutdata));
+        window.location.href = "shipping.html";
+    };
+
+    // append data 
+    function showCart(data) {
+        let main_div = document.getElementById("showdata");
+        let div = document.createElement("div");
+        main_div.appendChild(div);
+
+
+        var img = document.createElement("img");
+        img.src = data.image_url;
+
+
+        div.append(img);
+
+
+        let name1 = document.getElementById("ctname");
+
+        var h1 = document.createElement("h3");
+        h1.innerText = data.name;
+
+        name1.append(h1);
+
+
+        let price1 = document.getElementById("ctprice");
+
+        var h2 = document.createElement("h4");
+        h2.innerText = "$" + data.price;
+
+        price1.append(h2);
+
+        // append ctnpric2
+
+        let price2 = document.getElementById("ctnpric2");
+
+        var h3 = document.createElement("h4");
+        h3.innerText = "$" + data.price;
+
+        price2.append(h3);
+
+        // price again
+
+        let price3 = document.getElementById("next1");
+
+        var h4 = document.createElement("h4");
+        h4.innerText = "USD" + " " + "$" + " " + " " + data.price;
+
+        price3.append(h4);
+
+
+
+
+    
+
+
+
+
+
+
+
+    }
+
+
+
+</script>

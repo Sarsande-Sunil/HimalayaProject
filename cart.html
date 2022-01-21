@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart_page</title>
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <div id="head"></div>
+    <hr>
+    <h1>Shopping Cart</h1>
+    
+    <div class="container">
+        <!-- box1 -->
+        <div class="box">
+            <div id="cart_div">
+
+            </div>
+        </div>
+        <!-- box2 -->
+        <div class="box">
+            <div id="cartname"></div>
+
+            <p class="ptag">Size: 30 Caplets</p>
+
+        </div>
+        <!-- box3 -->
+        <div class="box">
+            <div id="price">
+
+            </div>
+        </div>
+        <div class="box">
+            <div id="ctrack">
+
+            </div>
+        </div>
+        <div class="box">
+            <div id="price1">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- box2 -->
+    <div class="container2">
+        <div class="c2">
+
+            <div class="picture">
+                <a href="Home.html">
+                    <img src="https://cdn1.iconfinder.com/data/icons/duotone-essentials/24/chevron_backward-512.png"
+                        alt="">
+
+                </a>
+                <div class="text1">
+                    <a href="Home.html">
+
+                        <h4> Continue Shopping</h4>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="c3">
+
+            <div class="image">
+                <img src="https://image.shutterstock.com/image-vector/trashcan-icon-carbage-can-symbol-260nw-1922719901.jpg"
+                    alt="">
+
+                <div class="text">
+                    <h4>Clear Shopping Cart</h4>
+                </div>
+            </div>
+
+            <div class="image">
+                <img src="https://cdn0.iconfinder.com/data/icons/line-design-basic-set-10/24/update-new-version-up-to-date-512.png"
+                    alt="">
+
+                <div class="text">
+                    <h4>Clear Shopping Cart</h4>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- box3  -->
+
+    <div class="container3">
+
+        <div class="cnt1">
+
+        </div>
+
+        <div class="cnt2">
+
+            <div id="total1">
+
+            </div>
+
+            <div id="total2">
+
+            </div>
+
+            
+                <button id="btn1"> PROCEED TO CHECKOUT </button>
+            
+
+        </div>
+
+    </div>
+
+   <div id="p">
+       <p>You May Be Interested in These Products</p>
+   </div>
+    <hr>
+    <!-- footer -->
+    <div id="bottom">
+
+    </div>
+</body>
+
+</html>
+
+<script type="module">
+    var count = 0;
+    import { navbar, footerreturn } from "./components/navbar.js"
+    console.log(navbar, footerreturn);
+
+    let top = document.getElementById("head");
+    top.innerHTML = navbar();
+
+
+    let checoutdata = JSON.parse(localStorage.getItem("himalaya3")) || [];
+    showCart(checoutdata);
+    //console.log("x",checoutdata);
+    count++;
+    console.log(count);
+
+    // append count
+    let track = document.getElementById("ctrack");
+    let counter = document.createElement("p");
+    counter.innerText = "Product_Count=" + " " + count;
+
+    track.append(counter);
+
+    let btn = document.getElementById("btn1");
+    btn.addEventListener("click",function(){
+        payment();
+    })
+
+    function  payment() {
+        
+        alert("Are you Sure about Your Product and Medical Specificatons");
+
+        window.location.href = "information.html"
+    }
+
+    function showCart(data) {
+
+        console.log(data);
+
+        let main_div = document.getElementById("cart_div");
+        let div = document.createElement("div");
+        main_div.appendChild(div);
+
+
+        var img = document.createElement("img");
+        img.src = data.image_url
+
+        div.append(img);
+
+        // append name 
+        let cname = document.getElementById("cartname");
+
+
+        var h1 = document.createElement("h3");
+        h1.innerText = data.name;
+
+        cname.append(h1);
+
+        // append price
+
+        let cprice = document.getElementById("price")
+
+        var h2 = document.createElement("h4");
+        h2.innerText = "$" + data.price;
+
+        cprice.append(h2);
+
+        // append price 2
+        let cprice1 = document.getElementById("price1")
+
+        var h3 = document.createElement("h4");
+        h3.innerText = "$" + data.price;
+
+        cprice1.append(h3);
+
+        // append price 3
+
+        let total = document.getElementById("total1");
+
+        let lay1 = document.createElement("h1");
+
+        lay1.innerText = "Subtotal:" + "$" + data.price;
+        total.append(lay1);
+
+        // append price 4
+
+        let subtotal = document.getElementById("total2");
+
+        let lay2 = document.createElement("h1");
+
+        lay2.innerText = "Grand Total: " + " $ " + data.price;
+        subtotal.append(lay2);
+
+
+
+    }
+
+
+    let bot = document.getElementById("bottom");
+    bot.innerHTML = footerreturn();
+
+
+</script>

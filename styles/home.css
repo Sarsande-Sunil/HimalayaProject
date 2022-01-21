@@ -1,0 +1,153 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+}
+a{
+  text-decoration: none;
+}
+.top-box {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 30px;
+  background-color: #ff7451;
+}
+a {
+  text-decoration: none;
+}
+p {
+  font-size: 20px;
+  text-align: center;
+  color: cornsilk;
+  font-weight: bold;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  width: 1530px;
+  height: 120px;
+}
+.image {
+  width: 300px;
+  height: 125px;
+}
+.list-l ul {
+  display: flex;
+  justify-content: space-between;
+
+}
+.li-text {
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #b2aa98;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+.img-search img {
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  margin-left: 500px;
+  margin-top: 30px;
+}
+.account img {
+  width: 50px;
+  height: 50px;
+  /* border-radius: 10px solid black; */
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.cart img {
+  width: 50px;
+  height: 50px;
+  /* border-radius: 10px solid black; */
+  margin-top: 30px;
+  margin-left: 20px;
+}
+li {
+  list-style: none;
+}
+#bigbox{
+  width: 100%;
+  height: auto;
+  /* border: 1px solid black; */
+  background-color: #eef2f0;
+  margin-top: 20px;
+}
+.box8{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  /* border: 1px solid black; */
+  width: 100%;
+  margin: auto;
+  height: 400px;
+}
+
+.box8-1{
+  /* border: 1px solid black; */
+  width: 20%;
+  height: 400px;
+}
+.box8-h1{
+  font-weight: bold;
+  font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  color: #343e46;
+  margin: auto;
+  text-align: center;
+}
+.box8-h2{
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #343e46;
+  font-size: 17px;
+}
+.box8-1-h1{
+  margin: auto;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #343e46;
+  font-size: 23px;
+}
+.box8-1-h2{
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #343e46;
+  font-size: 17px;
+}
+.box8-1-h3{
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #343e46;
+}
+.box8-input{
+  margin-top: 20px;
+  font-size: 23px;
+}
+.box9{
+  /* border: 1px solid black; */
+  width: 80%;
+  margin: auto;
+  height: 50px;
+}
+.box9-h4{
+  font-weight: bold;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #343e46;
+}
+.box10 h4{
+  border: 1px solid black;
+  font-size: 13px;
+  width: 80%;
+  margin: auto;
+  height: 25px;
+}

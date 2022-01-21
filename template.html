@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template_page</title>
+    <link rel="stylesheet" href="./styles/home.css">
+
+</head>
+<body>
+    <!-- navbar -->
+    <div id="head"></div>
+
+    <!-- footer -->
+    <div id="bottom"></div>
+    
+</body>
+</html>
+
+<script type="module">
+
+import { navbar, footerreturn } from "./components/navbar.js"
+    console.log(navbar, footerreturn);
+
+    let top = document.getElementById("head");
+    top.innerHTML = navbar();
+
+    let checoutdata = JSON.parse(localStorage.getItem("himalaya3"));
+    console.log("x",checoutdata);
+    
+
+    let bot = document.getElementById("bottom");
+    bot.innerHTML = footerreturn();
+
+
+</script>

@@ -1,0 +1,223 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    height: 700px;
+    /* border: 1px solid black; */
+    gap: 50px;
+    margin: auto;
+}
+.box1{
+    width: 100%;
+    height: 700px;
+    /* border: 1px solid lightgray;  */
+    
+}
+#image img{
+    width: 250px;
+    height: 100px;
+}
+#image2{
+    /* border: 1px solid lightgray; */
+    width: 100%;
+    height: 160px;
+}
+#mainform{
+    font-size: 25px;
+    margin-top: 100px;
+}
+.box2{
+    width: 100%;
+    height: 700px;
+    /* border: 1px solid lightgray; */
+    background-color: #f4f3f7;
+    
+}
+.container4{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    /* border: 1px solid lightgray; */
+}
+#showdata img{
+    width: 150px;
+    height: 150px;
+    margin-top: 100px;
+}
+#ctname h3{
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #473038;
+    margin-top: 150px;
+}
+#ctprice h4{
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #473038;
+    margin-top: 150px;
+}
+#form1{
+    font-size: 25px;
+    margin-left: 80px;
+}
+.col-auto input{
+    font-size: 20px;
+}
+#inputPassword2{
+    font-size: 25px;
+}
+#btn5 button{
+  font-size: 20px;
+}
+#flex1{
+    display: flex;
+    justify-content: space-between;
+}
+#ctnpric2 h4{
+    font-size: 20px;
+    color: #777167;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-right: 50px;
+}
+#subt h4{
+    font-size: 20px;
+    color: #777167;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 80px;
+}
+#flex2{
+    display: flex;
+    justify-content: space-between;
+}
+#subt1 h4{
+    font-size: 20px;
+    color: #777167;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; 
+    margin-left: 80px;
+
+}
+#next h4{
+    font-size: 20px;
+    color: #777167;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; 
+    margin-right: 50px;
+}
+#next1 h4{
+    font-size: 20px;
+    color: #777167;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-right: 50px;
+}
+#flex3{
+    display: flex;
+    justify-content: space-between;
+  
+}
+#details1{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 80px;
+    border: 1px solid lightgray;
+}
+#details2{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 80px;
+    border: 1px solid lightgray;
+}
+#details1-1 h4{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font: bold;
+    color: black;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+#details1-2 h4{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font: bold;
+    color: black;
+    margin-top: 25px;
+    margin-left: 80px;
+}
+#details1-3 h4{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font: bold;
+    color: black;
+    margin-top: 25px;
+    margin-left: 170px;
+}
+a{
+    text-decoration: none;
+}
+#details2-1 h4{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font: bold;
+    color: black;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+#details2-2 h4{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font: bold;
+    color: black;
+    margin-top: 25px;
+    margin-left: 40px;
+}
+#details2-3 h4{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font: bold;
+    color: black;
+    margin-top: 25px;
+}
+#details3{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    color: black;
+    border: 1px solid lightgray;
+}
+#details3-1 h4{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font: bold;
+    color: black;
+    margin-top: 25px;
+    margin-left: 40px;
+}
+#details3-2 h4{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font: bold;
+    color: black;
+    margin-top: 25px;
+    margin-left: 40px;
+}
+#heading h4{
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+#bottom{
+    margin-top: 250px;
+
+}

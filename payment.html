@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <title>Payment_page</title>
+    <link rel="stylesheet" href="payment.css" />
+</head>
+
+<body>
+    <!-- thsi is boot strap page -->
+    <div class="container">
+        <!-- box1 -->
+        <div class="box1">
+            <div id="image">
+                <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/new-logo.png?3169" alt="1" />
+            </div>
+            <hr />
+
+            <div id="image2">
+                <div id="details1">
+                    <div id="details1-1">
+                        <h4 id="h4c">Contact</h4>
+                    </div>
+
+                    <div id="details1-2">
+                        <h4>sunilsarsande1998@gmail.com</h4>
+                    </div>
+                    <div id="details1-3">
+                        <a href="information.html">
+                            <h4>change</h4>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="details2">
+                    <div id="details2-1">
+                        <h4>Shpping To</h4>
+                    </div>
+
+                    <div id="details2-2">
+                        <h4>At Post Warud Tq Dist Buldhana 443106, Buldhana.</h4>
+                    </div>
+                    <div id="details2-3">
+                        <a href="information.html">
+                            <h4>change</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="details3">
+                <div id="details3-1">
+                    <h4>Method</h4>
+                </div>
+                <div id="details3-2">
+                    <h4>Standard$10</h4>
+                </div>
+            </div>
+
+            <!-- inputmethod -->
+
+            <div id="head1">
+                <h3>Payment</h3>
+            </div>
+            <div id="head2">
+                <h4>All transactions are secure and encrypted.</h4>
+            </div>
+
+            <!-- paymentmethod -->
+            <div id="payment">
+                <div id="credid_card">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Credit Card
+                        </label>
+                    </div>
+
+                    <div id="cd1">
+                        <img src="https://www.nicepng.com/png/detail/87-870209_credit-card-logos-fastasticdeals-we-accept-credit-cards.png"
+                            alt="1" />
+                    </div>
+                </div>
+                <hr />
+
+                <div id="cardnumber">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Card Number</label>
+                            <input type="number" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" />
+                            <div id="emailHelp" class="form-text">
+                                We'll never share your Card Number with anyone else.
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="card_name">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Name On Card</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" />
+                            <div id="emailHelp" class="form-text">
+                                We'll never share your Name with anyone else.
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="cardetails">
+                    <div class="row g-3">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Expiration Date (MM/YY)"
+                                aria-label="First name" />
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Security Code"
+                                aria-label="Last name" />
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+
+                <div id="head1">
+                    <h3>Billing address</h3>
+                </div>
+                <div id="head2">
+                    <h4>Select the address that matches your card or payment method.</h4>
+                </div>
+
+                <div id="address">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Same as shipping address.
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Use a different billing address.
+                        </label>
+                      </div>
+                </div>
+
+                <div id="head1">
+                    <h3>Remember me</h3>
+                </div>
+
+                <div id="address2">
+                    <div class="form-check">
+
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Save my information for a faster checkout.
+                        </label>
+
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- mainform -->
+            <div id="mainform">
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="button" id="butn">
+                            Pay Now
+                        </button>
+                        <a href="shipping.html">Return to Shipping</a>
+                    </div>
+                </form>
+            </div>
+
+            <!-- bottom -->
+
+            <div id="bottom">
+                <div class="d-flex flex-row bd-highlight mb-3">
+                    <div class="p-2 bd-highlight">
+                        <a
+                            href="https://himalayausa.com/39917289633/checkouts/3835b6b2e0a86622ad5fa164f37796b3?_ga=2.123037647.590651311.1642169581-2082408017.1642169580">
+                            Refund Policy
+                        </a>
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <a
+                            href="https://himalayausa.com/39917289633/checkouts/3835b6b2e0a86622ad5fa164f37796b3?_ga=2.123037647.590651311.1642169581-2082408017.1642169580">
+                            Shipping Policy
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- box2 -->
+
+        <div class="box2">
+            <!-- container -->
+
+            <div class="container4">
+                <div id="showdata"></div>
+
+                <div id="ctname"></div>
+
+                <div id="ctprice"></div>
+            </div>
+            <hr />
+
+            <!-- form1 -->
+            <div id="form1">
+                <form class="row g-3">
+                    <div class="col-auto">
+                        <label for="inputPassword2" class="visually-hidden">Password</label>
+                        <input type="password" class="form-control" id="inputPassword2" placeholder="DISCOUNT CODE" />
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-3" id="btn5">
+                            Apply
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <hr />
+
+            <!-- flex -->
+            <div id="flex1">
+                <div id="subt">
+                    <h4>Subtotal</h4>
+                </div>
+                <div id="ctnpric2"></div>
+            </div>
+
+            <div id="flex2">
+                <div id="subt1">
+                    <h4>Shipping</h4>
+                </div>
+                <div id="next"></div>
+            </div>
+            <hr />
+
+            <div id="flex3">
+                <div id="subt1">
+                    <h4>Total</h4>
+                </div>
+                <div id="next1"></div>
+            </div>
+            <hr />
+        </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Propper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
+<script>
+    var count = 0;
+    let chekoutdata = JSON.parse(localStorage.getItem("himalaya3"));
+    showCart(chekoutdata);
+    count++;
+    console.log(chekoutdata);
+    console.log("x", count);
+
+    let btn = document.getElementById("butn");
+    btn.addEventListener("click", function () {
+        shipping(chekoutdata);
+    });
+
+    function shipping(chekoutdata) {
+        localStorage.setItem("himalaya3", JSON.stringify(chekoutdata));
+        window.location.href = "payment2.html";
+    }
+
+    // append data
+    function showCart(data) {
+        let main_div = document.getElementById("showdata");
+        let div = document.createElement("div");
+        main_div.appendChild(div);
+
+        var img = document.createElement("img");
+        img.src = data.image_url;
+
+        div.append(img);
+
+        let name1 = document.getElementById("ctname");
+
+        var h1 = document.createElement("h3");
+        h1.innerText = data.name;
+
+        name1.append(h1);
+
+        let price1 = document.getElementById("ctprice");
+
+        var h2 = document.createElement("h4");
+        h2.innerText = "$" + data.price;
+
+        price1.append(h2);
+
+        // append ctnpric2
+
+        let price2 = document.getElementById("ctnpric2");
+
+        var h3 = document.createElement("h4");
+        h3.innerText = "$" + data.price;
+
+        price2.append(h3);
+
+        // price again
+        var a = 10;
+
+        let p = document.getElementById("next");
+        let price4 = document.createElement("h4");
+        price4.innerText = "$" + a;
+
+        p.append(price4);
+
+        let price3 = document.getElementById("next1");
+
+        var x = data.price + a;
+        console.log(x);
+
+        let h4 = document.createElement("h4");
+        h4.innerText = "USD" + " " + "$" + " " + x;
+
+        price3.append(h4);
+    }
+</script>

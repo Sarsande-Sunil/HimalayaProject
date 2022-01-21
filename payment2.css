@@ -1,0 +1,252 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+  }
+  a{
+    text-decoration: none;
+  }
+  .top-box {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 30px;
+    background-color: #ff7451;
+  }
+  a {
+    text-decoration: none;
+  }
+  p {
+    font-size: 25px;
+    text-align: center;
+    color: cornsilk;
+    font-weight: bold;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    width: 1530px;
+    height: 120px;
+  }
+  .image {
+    width: 300px;
+    height: 125px;
+  }
+  .list-l ul {
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  .li-text {
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #8297bd;
+    margin-top: 40px;
+    margin-left: 50px;
+  }
+  .img-search img {
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    margin-left: 500px;
+    margin-top: 30px;
+  }
+  .account img {
+    width: 50px;
+    height: 50px;
+    /* border-radius: 10px solid black; */
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .cart img {
+    width: 50px;
+    height: 50px;
+    /* border-radius: 10px solid black; */
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  li {
+    list-style: none;
+  }
+  #bigbox{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    background-color: #eef2f0;
+    margin-top: 20px;
+  }
+  .box8{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    /* border: 1px solid black; */
+    width: 100%;
+    margin: auto;
+    height: 400px;
+  }
+  
+  .box8-1{
+    /* border: 1px solid black; */
+    width: 20%;
+    height: 400px;
+  }
+  .box8-h1{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #343e46;
+    margin: auto;
+    text-align: center;
+  }
+  .box8-h2{
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #343e46;
+    font-size: 20px;
+  }
+  .box8-1-h1{
+    margin: auto;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #343e46;
+    font-size: 25px;
+  }
+  .box8-1-h2{
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #343e46;
+    font-size: 20px;
+  }
+  .box8-1-h3{
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #343e46;
+  }
+  .box8-input{
+    margin-top: 20px;
+    font-size: 22px;
+  }
+  .box9{
+    /* border: 1px solid black; */
+    width: 80%;
+    margin: auto;
+    height: 50px;
+  }
+  .box9-h4{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #343e46;
+  }
+  .box10{
+    border: 1px solid black;
+    width: 80%;
+    margin: auto;
+    height: 80px;
+  }
+
+#container{
+    width: 40%;
+    height: 1000px;
+    border: 1px solid lightgray;
+    margin: auto;
+    margin-top: 50px;
+}
+#user_data h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+#image1 img{
+    width: 100%;
+    height: 400px;
+}
+#input_box{
+    display: flex;
+    justify-content: space-evenly;
+}
+#input_box input{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+}
+#lable{
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 10px;
+}
+#btn{
+    font-size: 20px;
+    background-color: black;
+    color: #fff;
+    border-radius: 20px;
+}
+#message h4{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 30px;
+}
+#note h4{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 30px;
+    color: grey;
+}
+#more{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#btn1 button{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    color: #fff;
+    background-color: black;
+}
+#btn2 button{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    color: #fff;
+    background-color: black;
+}
+#btn3 button{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    color: #fff;
+    background-color: black;
+}
+#visit{
+    border: 1px solid lightgray;
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    background-color: #eef2f0;
+}
+#visit h3{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 30px;
+}
+#visit h4{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
